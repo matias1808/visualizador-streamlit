@@ -40,7 +40,7 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 archivo = st.file_uploader("Sube un archivo Excel o CSV", type=["csv", "xlsx"])
-df = Non
+df = None
 if archivo is not None:
     try:
         if archivo.name.endswith('.csv'):
